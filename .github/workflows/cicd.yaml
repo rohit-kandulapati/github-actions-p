@@ -19,10 +19,10 @@ jobs:
       run: mvn compile
   
   security_checks:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    
+
     - name: Trivy Installation
       run: |
         sudo apt-get install wget gnupg
